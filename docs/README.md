@@ -17,7 +17,8 @@
     Support better docs
 <!-- ko-fi -->
 >
-# Features
+
+## Features
 
   Feature                |  Arduino Nano    |  STM32 Blackpill
 -----------------------  |------------------|-----------------
