@@ -98,16 +98,29 @@ Name                                      | Voltage   | Model Years | Model ID  
 
 2. **Determine your build path** 
 
-  Select the Gaggiuino generation (see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3).  
-  Gen 3 is recommended for Gaggia Classic and Rancilio Silvia variants - it's newest, has more features, and is being actively worked on.  
-  Gen 2 is recommended if attempting a Gaggiuino install on machines that aren't officially compatible - it provides a stable code base to start with.  
+  The standard recommended build path is Gaggiuino Gen 3 using a [PCBv4](guides-stm32/pcb-guide.md) control system and ESP32-P4 screen (providing mbedUI and webUI), connected using Plug-and-Play/Custom wiring.
 
-  Decide if you're going to order a [PCB](guides-stm32/pcb-guide.md) or build a [component (Lego)](guides-stm32/lego-component-build-guide.md) control system. PCBv4 is recommended for Gen 3 builds, while PCBv3.1 is recommended for Gen 2 builds. 
-  The component build is slightly more flexible for experimentation and less picky about thermocouple grounding, however, it adds significant effort and makes reliability dependent on the maker's skill. 
+  <details>
+  <summary><b>Nonstandard build options</b> <i>(Click to expand)</i></summary>
 
-  Decide how to integrate the control system with your espresso machine. It can either be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring, but sometimes more confusing) or the stock wiring can be replaced with a [custom wiring harness](guides-stm32/3pln-custom-wiring.md) (more work, but results in a clean, straightforward install). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and read through the instructions before deciding.
+    **Gaggiuino Generation:**  
+    Gaggiuino Gen 2 may be used if attempting a Gaggiuino install on machines that aren't officially compatible - it provides a stable code base to start with. Notes:  
+    - see [Features](#features) and [Announcements](announcements/) to compare Gen 2 and Gen 3
+    - Gen 2 is no longer officially supported
+    - Gen 2 is incompatible with PCBv4.  
 
-  If you're building Gen 3, decide which interface option you prefer. For an on-machine (embedded) and web UI, select the 4.3" IPS [touchscreen](guides/interface-screen.md) and one of its mounting options. For a "stealth" install with web UI only, select the [headless](guides/interface-headless.md) PCB.
+    **Control System:**  
+    PCBv3 and the Component (Lego) control systems are possible to DIY, and are compatible with both Gen 2 and Gen 3 - the MCU is on a separate STM32F411 BlackPill (Gen 2) or STM32U585 (Gen 3) core board. Notes:
+    - There is minimal support available for control system builds
+    - These builds have more failure points than PCBv4
+    - Historically, DIY builds have lower reliability
+
+    **Interface:**  
+    The Gen 3 and 3.5 screens provides a local interface (mbedUI) as well as a web interface (webUI). For a "stealth" install with webUI only, the [headless](guides/interface-headless.md) module is available.  
+    
+    **Wiring:**  
+    Gaggia espresso *machines without the eco board* can be [integrated into the stock wiring](guides-stm32/3pln-stock-wiring-integration.md) with a few jumpers (less wiring effort, but more confusing, and more overall failure points). It is recommended that you check the *notes* in the [Compatibility Table](#compatibility) for your machine and read through the instructions before deciding.    
+  </details>  
 
 3. **Select and Order Components**
 
@@ -127,13 +140,13 @@ Name                                      | Voltage   | Model Years | Model ID  
 
   Follow the instructions for your control system selection
 
-    * [A: PCB](guides-stm32/pcb-guide.md)
-    * [B: Component (Lego) build](guides-stm32/lego-component-build-guide.md)
+    * [PCB](guides-stm32/pcb-guide.md)
+    * [Component (Lego) build](guides-stm32/lego-component-build-guide.md)
 
   Follow the instructions for your wiring selection
 
-    * [A: Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
-    * [B: Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
+    * [Stock Wiring Integration](guides-stm32/3pln-stock-wiring-integration.md)
+    * [Plug-and-Play/Custom Wiring Harness](guides-stm32/3pln-custom-wiring.md)
 
   Follow the instructions for your interface selection
 
@@ -160,7 +173,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 > PCBs, kits, and 3D-printed parts may be ordered from the **Approved Official Suppliers** in the sidebar.  
 > Head over to the community [Discord](community/community-media.md#community-discord) for updates in the relevant channels:  
 > * #diy-efi-co-uk
-> * #peakcoffee-cc
+> * #gaggiuino-co
 > * #espressio-nl  
 >
 > Alternatively, components can be ordered from AliExpress and parts can be printed from the design files. 

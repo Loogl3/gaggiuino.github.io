@@ -4,6 +4,7 @@
 <!-- panels:title -->
 ## Milestones
 <!-- div:panels -->
+* __September 2026 - New screen released, plug-and-play wire harness developed for all compatible Gaggia Classic versions, new UI design. Documentation efforts in process.__ 
 * __September 2024 - Gaggiuino Generation 3 (NextMonday&trade;), based on an STM32 + ESP32-S3 UI architecture, is now open for public use.__  
     * Main features and basic installation documentation are complete. Additional features and comprehensive documentation are in process.  
     * The BlackPill / SMT32F411CEU6 is a Cortex&reg;-M4 that is nearing its limits. Significant effort was put into optimization and testing a stable overclock so Gen 3 software will work on current builds.
@@ -18,8 +19,8 @@
 Gen| Microcontroller (MCU)                  | Screen/UI| Compatible Builds                                                     |Beta    | Release  |Last Commit   | Current Support  | 
 :-:|:---------------------------------------|:--------:|:----------------------------------------------------------------------|:------:|:--------:|:------------:|:----------------:|
 1  |ATmega328<br/> (Arduino Nano)           |Nextion   |**Component (Lego)**<br/>PCBv1<br/>(MainBoard + SubBoard)              |2021    | -        |Sep 2022      |:x:               |
-2  |STM32F411CEU6                           |Nextion   |Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / **PCBv3.1** |Jul 2022| May 2023 |Mar 2024      |:heavy_check_mark:| 
-3  |STM32F411CEU6 (OC)<br/>**STM32U585CIU6**|ESP32-S3<br/>(Embedded & Web)|Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / PCBv3.1<br/>**PCBv4**|May 2024|Sep 2024|-|:heavy_check_mark:|     
+2  |STM32F411CEU6                           |Nextion   |Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / **PCBv3.1** |Jul 2022| May 2023 |Mar 2024      |:x:               | 
+3  |STM32F411CEU6 (OC)<br/>**STM32U585CIU6**|ESP32-S3<br/>**ESP32-P4**<br/>|Component (Lego)<br/>PCBv2 / PCBv2.1 :warning:<br/>PCBv3 / PCBv3.1<br/>**PCBv4**|May 2024|Sep 2024|-|:heavy_check_mark:|     
 
 >
 * :warning: - *PCBv2 / PCBv2.1 are compatible but support is minimal.*
