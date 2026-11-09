@@ -160,7 +160,7 @@ Name                                      | Voltage   | Model Years | Model ID  
 > PCBs, kits, and 3D-printed parts may be ordered from the **Approved Official Suppliers** in the sidebar.  
 > Head over to the community [Discord](community/community-media.md#community-discord) for updates in the relevant channels:  
 > * #diy-efi-co-uk
-> * #peakcoffee-cc
+> * #gaggiuino-co
 > * #espressio-nl  
 >
 > Alternatively, components can be ordered from AliExpress and parts can be printed from the design files. 
